@@ -1,4 +1,4 @@
-# 2.DMOJ problem wc15c2j1, A New Hope
+# 2.o
 
 # Get the input as a number.
 far_number = int(input())
