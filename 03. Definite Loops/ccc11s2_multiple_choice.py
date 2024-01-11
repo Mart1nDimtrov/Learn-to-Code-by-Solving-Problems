@@ -1,10 +1,17 @@
 # 4.DMOJ problem ccc11s2, Multiple Choice
 
 number_of_lines = int(input())
-number_of_lines = number_of_lines * 2
+rows = number_of_lines * 2
+score = 0
+sheet = ""
 
-for i in range(number_of_lines):
+for i in range(rows):
 	answer = input()
 	sheet = sheet + answer
-	if (i % 2 == 0):
-		
+	if (i > number_of_lines - 1):
+		if sheet[i] == sheet[i - number_of_lines]:
+			score = score + 1
+
+print(score)
+
+
