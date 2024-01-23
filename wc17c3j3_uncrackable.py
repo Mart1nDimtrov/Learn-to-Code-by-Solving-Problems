@@ -1,1 +1,0 @@
-# 1.DMOJ problem wc17c3j3, Uncrackable
