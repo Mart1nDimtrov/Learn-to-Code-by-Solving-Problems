@@ -26,10 +26,10 @@ while count < 10:
 			counted = counted + int(percentages[i] * students)
 		elif i == 3:
 			counted = counted + int(percentages[i] * students)
-			percentages_sum = percentages_sum + ((int(percentages[i] * students) * 5)
+			percentages_sum = percentages_sum + (int(percentages[i] * students) * 5)
 
 	uncounted = students - counted
-	percentages_sum = percentages_sum +
+	percentages_sum = percentages_sum + (prices[percentages.index(max(percentages))] * uncounted)
 
 	#print(percentages_sum)
 	count = count + 1
