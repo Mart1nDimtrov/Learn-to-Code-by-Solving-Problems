@@ -13,15 +13,12 @@ while count < 10:
 
 	for i in range(4):
 		if i == 0:
-			#students_rounded = students_rounded + round(((percentages[i] * students) % 1))
 			percentages_sum = percentages_sum + (int(percentages[i] * students) * 12)
 			counted = counted + int(percentages[i] * students)
 		elif i == 1:
-			#students_rounded = students_rounded + round(((percentages[i] * students) % 1))
 			percentages_sum = percentages_sum + (int(percentages[i] * students) * 10)
 			counted = counted + int(percentages[i] * students)
 		elif i == 2:
-			#students_rounded = students_rounded + round(((percentages[i] * students) % 1))
 			percentages_sum = percentages_sum + (int(percentages[i] * students) * 7)
 			counted = counted + int(percentages[i] * students)
 		elif i == 3:
@@ -31,7 +28,6 @@ while count < 10:
 	uncounted = students - counted
 	percentages_sum = percentages_sum + (prices[percentages.index(max(percentages))] * uncounted)
 
-	#print(percentages_sum)
 	count = count + 1
 
 	if percentages_sum / 2 < cost:
