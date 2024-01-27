@@ -1,4 +1,4 @@
-# DMOJ problem coci17c1p1, Cezar
+# 1.DMOJ problem coci17c1p1, Cezar
 
 all_cards = [2, 3, 4, 5, 6, 7,
 			 8, 9, 10, 10, 10, 10, 11]
