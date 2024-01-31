@@ -2,23 +2,29 @@
 
 waves = int(input())
 tide = list(map(int, input().split(" ")))
-high_tide = 0
-previous = tide[0]
-is_unknown = 0
 
-for i in range(waves):
+min_low_tide_value = min(tide)
+max_high_tide_value = max([x for x in tide])
+min_low_tide_i = tide.index(min(tide))
+max_high_tide_i = tide.index(max([x for x in tide]))
+current = 0
+unknown = 0
 
-	if previous < tide[i]:
-		previous = tide[i]
-		high_tide = 1
-	elif tide[i] < previous and high_tide == 1:
-		is_unknown = 1
-
-if is_unknown:
+if min_low_tide_i + 1 < len(tide):
+	current = tide[min_low_tide_i + 1]
+	if min_low_tide_i > max_high_tide_i:
+		unknown = 1
+	else:
+		for i in range(min_low_tide_i + 1, max_high_tide_i):
+			if current < tide[i]:
+				current = tide[i]
+			elif current > tide[i]:
+				unknown = 1
+else:
+	unknown = 1
+	
+if unknown:
 	print("unknown")
 else:
-	print(max(tide) - min(tide))
-
-
-
+	print(max_high_tide_value - min_low_tide_value)
 
