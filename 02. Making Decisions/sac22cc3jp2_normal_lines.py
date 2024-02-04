@@ -8,5 +8,10 @@ line_1_y = int(line_1[1])
 line_2_x = int(line_2[0])
 line_2_y = int(line_2[1])
 
-if line_1_x == line_2_x or line_2_y == line_1_y:
+if line_1_x == line_2_x:
+	print("y-axis")
+elif line_2_y == line_1_y:
+	print("x-axis")
+else:
+	print("neither")
 
