@@ -1,4 +1,4 @@
-# DMOJ problem ecoo18r1p2, Rue's Rings
+# 9.DMOJ problem ecoo18r1p2, Rue's Rings
 
 for d in range(10):
 	
