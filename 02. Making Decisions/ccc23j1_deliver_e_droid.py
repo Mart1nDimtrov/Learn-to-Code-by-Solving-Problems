@@ -2,8 +2,10 @@
 
 packages = int(input())
 obstacles = int(input())
+result = (packages * 50) - (obstacles * 10)
+
 if packages > obstacles:
-	print(((packages * 50) - (obstacles * 10)) + 500)
+	print(result + 500)
 else:
-	print((packages * 50) - (obstacles * 10))
+	print(result)
 
