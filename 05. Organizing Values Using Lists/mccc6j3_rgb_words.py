@@ -1,7 +1,7 @@
 # DMOJ problem mccc6j3, RGB Words
 
 word_length = int(input())
-word = input()
+word = list(input())
 count = 0
 
 for i in range(word_length):
@@ -23,5 +23,7 @@ for i in range(word_length):
 		elif word[j] == "B" and g == 1:
 			b = 1
 			count = count + 1
+		elif word[j] != "G" and word[j] != "B" and r == 0:
+			break
 
 print(count)
