@@ -5,6 +5,7 @@ section_count = 0
 subsection_count = 0
 subsubsection_count = 0
 section_type_previous = ""
+
 for i in range(n):
 	section_input = input().split()
 	section_type = section_input[0]
