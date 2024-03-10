@@ -12,7 +12,7 @@ def check_unique(year_list):
 			is_unique = False
 			return is_unique
 
-	return True
+	return is_unique
 
 year = int(input())
 year_found = 0
