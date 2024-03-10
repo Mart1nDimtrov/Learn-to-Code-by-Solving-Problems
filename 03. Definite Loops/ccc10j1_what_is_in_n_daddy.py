@@ -17,7 +17,5 @@ for i in range(number):
 			addens.append(i)
 			addens.append(j)
 			count = count + 1
-			#print(i,j)
-
 
 print(count)
