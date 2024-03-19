@@ -27,3 +27,5 @@ input_file.close()
 
 output_file = open("word.out", "w")
 output_file.write(new_string)
+
+output_file.close()
