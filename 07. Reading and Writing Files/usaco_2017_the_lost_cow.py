@@ -24,14 +24,15 @@ while True:
 
 	if up == 1:
 		up = 0
-
 	else:
 		up = 1
 
 	previous_distance = distance
 	distance = distance * 2
 
-print(distance_sum)
+output_file.write(str(distance_sum))
+output_file.close()
+input_file.close()
 
 
 
