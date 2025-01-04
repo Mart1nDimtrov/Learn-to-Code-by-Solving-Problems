@@ -36,6 +36,7 @@ for position in range(0, n_positions):
 			if unique_counter == len(spotty_cow_genomes[position]):
 				possible_spotty_genomes_count = possible_spotty_genomes_count + 1
 
-print(possible_spotty_genomes_count)
-
+output_file.write(str(possible_spotty_genomes_count))
+output_file.close()
+input_file.close()
 
