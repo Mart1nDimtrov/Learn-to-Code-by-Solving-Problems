@@ -30,11 +30,13 @@ def count_cow_moves(cow_positions):
 input_file = open('herding.in', 'r')
 output_file = open('herding.out', 'w')
 cow_positions =list(map(int, input_file.read().split()))
-print(cow_positions)
+
 min_cow_moves = 0
 max_cow_moves = 0
 
 min_cow_moves, max_cow_moves = count_cow_moves(cow_positions)
 
-print(min_cow_moves, max_cow_moves)
-
+output_file.write(str(min_cow_moves) + "\n")
+output_file.write(str(max_cow_moves))
+output_file.close()
+input_file.close()
