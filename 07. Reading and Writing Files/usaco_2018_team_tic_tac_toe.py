@@ -15,10 +15,6 @@ for i in range(0, 3):
 	elif len(set(line)) == 2:
 		two_cows_set.add("".join(sorted(set(line))))
 
-print(set(tic_tac_toe_board[0][1] + tic_tac_toe_board[1][1] + tic_tac_toe_board[2][1]))
-print("".join(sorted(set(tic_tac_toe_board[0][1] + tic_tac_toe_board[1][1] + tic_tac_toe_board[2][1]))))
-print(two_cows_set)
-
 if len(set(tic_tac_toe_board[0][0] + tic_tac_toe_board[1][0] + tic_tac_toe_board[2][0])) == 1:
 	individual_cows_set.add("".join(sorted(set(tic_tac_toe_board[0][0] + tic_tac_toe_board[1][0] + tic_tac_toe_board[2][0]))))
 if len(set(tic_tac_toe_board[0][1] + tic_tac_toe_board[1][1] + tic_tac_toe_board[2][1])) == 1:
@@ -29,7 +25,6 @@ if len(set(tic_tac_toe_board[0][0] + tic_tac_toe_board[1][1] + tic_tac_toe_board
 	individual_cows_set.add("".join(sorted(set(tic_tac_toe_board[0][0] + tic_tac_toe_board[1][1] + tic_tac_toe_board[2][2]))))
 if len(set(tic_tac_toe_board[0][2] + tic_tac_toe_board[1][1] + tic_tac_toe_board[2][0])) == 1:
 	individual_cows_set.add("".join(sorted(set(tic_tac_toe_board[0][2] + tic_tac_toe_board[1][1] + tic_tac_toe_board[2][0]))))
-
 
 if len(set(tic_tac_toe_board[0][0] + tic_tac_toe_board[1][0] + tic_tac_toe_board[2][0])) == 2:
 	two_cows_set.add("".join(sorted(set(tic_tac_toe_board[0][0] + tic_tac_toe_board[1][0] + tic_tac_toe_board[2][0]))))
@@ -42,7 +37,9 @@ if len(set(tic_tac_toe_board[0][0] + tic_tac_toe_board[1][1] + tic_tac_toe_board
 if len(set(tic_tac_toe_board[0][2] + tic_tac_toe_board[1][1] + tic_tac_toe_board[2][0])) == 2:
 	two_cows_set.add("".join(sorted(set(tic_tac_toe_board[0][2] + tic_tac_toe_board[1][1] + tic_tac_toe_board[2][0]))))
 
-print(len(individual_cows_set))
-print(len(two_cows_set))
+output_file.write(str(len(individual_cows_set)) + "\n")
+output_file.write(str(len(two_cows_set)))
+output_file.close()
+input_file.close()
 
 
