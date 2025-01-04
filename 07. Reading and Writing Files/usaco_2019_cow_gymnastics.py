@@ -21,5 +21,7 @@ for n_session in range(0, practice_sessions):
 			elif cow_n > cow_n_2:
 				cow_results[line[cow_n]][line[cow_n_2]-1] = 0
 					
-print(sum([sum(value) for key, value in cow_results.items()]))
+output_file.write(str(sum([sum(value) for key, value in cow_results.items()])))
+output_file.close()
+input_file.close()
 		
