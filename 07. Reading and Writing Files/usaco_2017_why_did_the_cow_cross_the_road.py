@@ -1,4 +1,4 @@
-# USACO 2017 February Bronze Contest problem Why Did the Cow Cross the Road
+D
 
 input_file = open('crossroad.in', 'r')
 output_file = open('crossroad.out', 'w')
@@ -19,4 +19,6 @@ for i_2 in range(0, n_cows):
 	if i_2 > 0 and crossings[i_2][0] == crossings[i_2-1][0] and crossings[i_2][1] != crossings[i_2-1][1]:
 		n_crossings = n_crossings + 1
 
-print(n_crossings)
+output_file.write(str(n_crossings))
+output_file.close()
+input_file.close()
