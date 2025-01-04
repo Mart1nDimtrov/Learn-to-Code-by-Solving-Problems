@@ -53,4 +53,7 @@ for i in range(0, 100):
 		b_m[2][1] = milk_b_new
 
 for i, v in b_m:
-	print(v)
+	output_file.write(str(v) + "\n")
+
+output_file.close()
+input_file.close()
