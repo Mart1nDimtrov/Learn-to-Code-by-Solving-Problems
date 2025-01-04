@@ -37,7 +37,6 @@ for p_i in range(n_pastures):
 	min_grass_type = min([bucket_seed for bucket_seed in bucket_seeds if bucket_seed not in grass_types_for_cows])
 	pastures[p_i] = min_grass_type
 
-print("".join(map(str, pastures)))
-
+output_file.write("".join(map(str, pastures)))
 input_file.close()
 output_file.close()
